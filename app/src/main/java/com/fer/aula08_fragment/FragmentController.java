@@ -1,5 +1,4 @@
 package com.fer.aula08_fragment;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -9,12 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FragmentController extends FragmentStatePagerAdapter {
-
    private final List<String> nomes = new ArrayList<>();
-   private final List<Fragment>lista = new ArrayList<>();
+   private final List<Fragment> lista = new ArrayList<>();
 
-   public FragmentController(@NonNull FragmentManager fm, int comportamento) {
-      super(fm, comportamento);
+   public FragmentController(@NonNull FragmentManager fm, int comportamento){
+      super(fm,comportamento);
    }
 
    public void addFragment(Fragment f, String nome){
@@ -33,4 +31,3 @@ public class FragmentController extends FragmentStatePagerAdapter {
       return lista.size();
    }
 }
-

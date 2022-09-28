@@ -8,35 +8,48 @@
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
         android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aula 08 - Fragments"
-        android:textColor="@color/black"
-        />
+        android:textColor="@color/black"/>
 
     <TextView
-        android:id="@+id/txt01"
+        android:id="@+id/text1"
+        android:layout_below="@id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/titulo"
+        android:text="Fragment 2"
         android:layout_marginTop="50dp"
-        android:text="Você está na Fragment 2"
-        android:textColor="@color/design_default_color_error"
-        android:textSize="20dp"/>
+        android:textSize="30dp"
+        android:textColor="#9A0F0F"
+        />
+
+    <Button
+        android:id="@+id/sensor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensores"
+        android:background="@color/design_default_color_error"
+        android:textColor="@color/black"
+        android:shadowColor="@color/cardview_shadow_start_color"
+        android:textColorHighlight="@color/white"
+        android:layout_centerInParent="true"
+        />
+
 
     <Button
         android:id="@+id/btn01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Fragment 1"
-        android:layout_above="@id/btn02"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="50dp"/>
-
+        android:layout_above="@id/btn02"
+        android:layout_marginBottom="50dp"
+        />
     <Button
         android:id="@+id/btn02"
         android:layout_width="wrap_content"
@@ -44,7 +57,9 @@
         android:text="Fragment 2"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="80dp"/>
+        android:layout_marginBottom="40dp"
+        />
+
 
 
 </RelativeLayout>
